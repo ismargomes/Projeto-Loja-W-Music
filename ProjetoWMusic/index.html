@@ -9,7 +9,10 @@
         <meta name="author" content="Ismar Gomes">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" type="Text/css" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&display=swap" type="text/css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3818d44296.js" crossorigin="anonymous"></script>
+
 
         <title>Home-W-Music</title>
 
@@ -40,11 +43,11 @@
 
                 <div id="box">
 
-                    <div id="text" align="center"> 
+                    <div id="home"> 
                     
                         <h2>Home</h2>
 
-                            <p style="font-size: 20px;">Escolha o seu <strong>Instrumento</strong></p>
+                            <p class="pgf">Escolha o seu <strong>Instrumento</strong></p>
                             
                         <select>
                             <option value="bateria">Bateria</option>
@@ -92,13 +95,18 @@
                             <label for="radio1" class="manual-btn"></label>
                             <label for="radio2" class="manual-btn"></label>
                             <label for="radio3" class="manual-btn"></label>                 
-                        </div>                           
-                
+                        </div> 
+                        
                     </div><!--Fim da div "slides"-->
 
+                    <div id="botoes">
+                        <button onclick="startTimer()" class="start">Start</button>
+                        <button onclick="stopTimer()" class="stop">Stop</button><br><br>
+                    </div>
+                    
                 </div><!--Fim da div "slider"-->
 
-                <p align="center" style="font-size: 25px; font-family: cursive;"><strong>AQUI VOCÊ ESCOLHE E TESTA O SEU EQUIPAMENTO</strong></p>
+                <p class="escolhe"><strong>AQUI VOCÊ ESCOLHE E TESTA O SEU EQUIPAMENTO</strong></p>
                             
                     <ul class="lista" align="center">
                         <li>Escolha os equipamentos que você quer comprar;</li>
@@ -106,7 +114,7 @@
                         <li>Receba seu equipamento no sitio desejado.</li>
                     </ul>
                             
-                    <div id="text" align="center">		 
+                    <div id="text">		 
                         <h2>W.Music</h2>
                     </div>
                 

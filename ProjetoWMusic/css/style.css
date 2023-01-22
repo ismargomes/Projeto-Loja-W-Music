@@ -1,10 +1,288 @@
-* {
-    margin: 0px;
-    padding: 0px;
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh; 
     box-sizing: border-box;
-    text-decoration: none;
+    justify-content: center;
+    align-items: center;
 }
 
-.background {
-    background-color: aqua;
+header{
+    display: flex;
+    background-color: #535c68;
+    border-bottom: 8px solid #000;
+    padding: 5px 10px;
+    justify-content:space-between;
+    margin-bottom: 0px;
+    margin-top: -10px;	
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+h1{
+    font-family: 'fira code', sans-serif;
+    font-size: 40px;
+    color: #FFF;
+    text-shadow: 4px 4px 2px #000;
+    line-height:60px;
+    margin-left:60px;		
+}
+
+h2{
+    font-size: 40px;
+    font-family: 'fira code', sans-serif;
+    font-size: 40px;
+    color: #FFF;
+    text-shadow: 4px 4px 2px #000;
+    line-height: 40px;
+    margin: 18px;
+}
+
+nav {
+    padding-top: 40px;
+    padding-bottom: 0px;
+    padding-left: 20PX;
+    text-align: right;
+    background-color:#535c68;	
+}
+
+a {
+    display: inline-flex;
+    align-items: center;
+    color:#FFF;
+    font-size:25px;
+    font-family:Fira Code, sans-serif;
+    margin-right:100px; 	
+    text-decoration:none;		
+}
+
+a::before {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    content:"" ;
+    background-color:#F25A70;
+}
+
+#button, h2 {
+    display: inline-block;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height:50px;
+    box-shadow:	5px 5px 0px #000;	  
+    background-color:#F25A70;
+}
+
+#box {
+    display: inline;
+    margin-top: -20px;    
+}
+
+#home {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 45%;
+}
+
+.pgf {
+    font-size: 20px;
+    margin-left: -2%;
+}
+
+select {
+    margin-left: 5%; 
+}
+
+.slider {
+    margin: 0;
+    margin-left: 26.5%;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 5s;
+}
+
+.slide img{
+    width: 800px;
+}
+
+#botoes {
+    background-color: #000;
+}
+
+.start{
+    margin-left: 650px;
+    margin-top: 5px;
+    color: #4cd137;
+    font-size: 20px;
+    padding: 1px 15px;
+    border: 2px solid #000;
+    border-style: outset;
+    border-radius: 10px;/*Ficar arredondado*/
+}
+
+.start:hover{
+    background-color:#4cd137;
+}
+
+
+.stop{
+    margin-left: 80px;
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 1px 15px;
+    border: 2px solid #000;
+    border-style: outset;
+    border-radius: 10px;
+}
+
+.stop:hover{
+    background-color:red;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    border: 2px solid #fff;
+    opacity: 0;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid #4834d4;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    opacity: 0;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 370px;
+    display: flex;
+    justify-content: center;   
+}
+
+
+#container {
+    margin-top: 60px;
+    display: inline-block;
+    justify-content:space-between;	          
+    width:100%;
+    height:500px;			
+}
+
+#instrument {		
+   width: 1300px;
+   height: 400px;
+   margin-left:200px;
+   margin-top: 0px;
+   margin-bottom:20px;		
+}
+
+#music {
+   margin-left:40px;
+   margin-right:40px;	    
+}
+
+#imagem{
+   margin-bottom:10px;
+   margin-left:0px;
+   margin-top:10px;		
+}
+
+#p{
+font-family:Fira Code, sans-serif;
+font-size:20px;	
+}
+
+.escolhe {
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+#local{
+    display:block;		
+    margin-bottom:80px;
+    margin-left: 400px;
+    margin-right:0px;
+    margin-top:0px;		
+}
+
+.lista{
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+    color: #000;
+}
+
+#text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 42%;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background-color: #535c68;
+    border-bottom: 10px solid #000;
 }
