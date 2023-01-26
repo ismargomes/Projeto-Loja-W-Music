@@ -269,12 +269,30 @@ aside {
     height:500px;			
 }
 
-#instrument {		
-   width: 1300px;
-   height: 400px;
-   margin-left:200px;
-   margin-top: 0px;
-   margin-bottom:20px;		
+.instrument {
+    display: flex;	
+    flex-direction: column;	
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+
+}
+
+#inst_1 {
+    width: 1300px;
+    height: 200px;
+    margin-left:200px;
+    margin-top: 30px;
+    margin-bottom:0px;	
+    gap: 10px;	
+}
+
+#inst_2 {
+    width: 1300px;
+    height: 200px;
+    margin-left:200px;
+    margin-top: 0px;
+    margin-bottom:0px;		
 }
 
 #music {

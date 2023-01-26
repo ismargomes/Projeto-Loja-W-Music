@@ -13,86 +13,127 @@
 		<title>Catálogo</title>
 
 		<script src="https://kit.fontawesome.com/3818d44296.js" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 		
-		<link rel="stylesheet" type="text/css" href="css/styles.css"><!--aqui type="text/css"-->
+		<link rel="stylesheet" type="text/css" href="css/style.css"><!--aqui type="text/css"-->
 
 	</head>
 
 	<body>
-		<header>
-			<h1>W.Music</h1>
 
-			<nav>				 
-				<a lang="en" href="index.html" target="_blank">Home</a>
-				<a href="sobre.html" target="_blank">Sobre</a>
-				<a href="catalogo.html" target="_blank">Catálogo</a>
-				<a href="contacto.html" target="_blank">Contacto</a>				 
-			</nav>
+		<main class="background">
 
-		</header>
-		
-		<div id="box">
-			<div id="text" align="center"> 
+			<header>
+
+				<div class="logo">
+                    <h1>W.Music</h1>
+                </div>
+
+				<nav>				 
+					<a lang="en" href="index.html" target="_blank">Home</a>
+					<a href="sobre.html" target="_blank">Sobre</a>
+					<a href="catalogo.html" target="_blank">Catálogo</a>
+					<a href="contacto.html" target="_blank">Contacto</a>				 
+				</nav>
+
+			</header>
+
+			<article>
 			
-				<h2>Catálogo</h2>
-					<p>Escolha o seu <strong>Instrumento</strong></p>
-						
-				<select>
-						<option value="bateria">Bateria</option>
-						<option value="guitarra">Guitarra</option>
-						<option value="piano">Piano</option>
-						<option value="trompete">Trompete</option>
-						<option value="teclado">Teclado</option>
-						<option value="caixa">Caixa</option>
-						<option value="violino">Violino</option>
-						<option value="baixo">Baixo</option>
-						<option value="percussao">Percussão</option>					
-				</select>			  
-			</div>
-		</div>
+				<div id="box">
+										
+						<h2 id="home">Catálogo</h2>
 
-		<div id="instrument">
-
-				<img src="assets/img/drumms.jpg" width="220px" height="200px"  alt="imagem drumms" title="Drumms" />
-						
-				<img src="assets/img/guitarras.jpg" width="220px" height="200px"  alt="guitarras" title="Guitarras" /> 
-							
-				<img src="assets/img/piano.jpg" width="220px" height="200px"  alt="imagem piano" title="Piano" />
+							<p class="pgf">Escolha o seu Instrumento</p>
 								
-				<img src="assets/img/trompete.jpg" width="220px" height="200px"  alt="trompete" title="Trompete" /> 
-
-				<img src="assets/img/tecladostudio.jpg" width="220px" height="200px"  alt="imagem teclado studio" title="Teclado" />
-									
-				<img src="assets/img/caixa.jpg" width="220px" height="200px"  alt="caixa" title="Caixa" /> 
-									
-				<img src="assets/img/violino.jpg" width="220px" height="200px"  alt="violino" title="violino" /> 
-
-				<img src="assets/img/baixo.jpg" width="220px" height="200px"  alt="baixo" title="Baixo" /> 
-
-				<img src="assets/img/percussao.jpg" width="220px" height="200px"  alt="baixo" title="Baixo" />
-				
-				<img src="assets/img/logo-w-music.jpeg" width="220px" height="200px"  alt="baixo" title="logo" />
-
-		</div>
-				
-				<p align="center" style="font-size: 25px; font-family: cursive;"><strong>AQUI VOCÊ ESCOLHE E TESTA O SEU EQUIPAMENTO</strong></p>
-				
-					<ul class="lista" align="center">
-						<li>Escolha os equipamentos que você quer comprar;</li>
-						<li>Escolha o meio de pagamento;</li>
-						<li>Receba seu equipamento no sitio desejado.</li>
-					</ul>
+						<select>
+							<option value="bateria">Bateria</option>
+							<option value="guitarra">Guitarra</option>
+							<option value="piano">Piano</option>
+							<option value="trompete">Trompete</option>
+							<option value="teclado">Teclado</option>
+							<option value="caixa">Caixa</option>
+							<option value="violino">Violino</option>
+							<option value="baixo">Baixo</option>
+							<option value="percussao">Percussão</option>					
+						</select>			  
 					
-					<div id="text" align="center">		 
-						<h2>W.Music</h2>
+				</div><!--Fim da div "box"-->
+
+		    </article>
+
+			<section>
+
+				<div class="instrument">
+
+					<div id="inst_1">
+
+						<img src="assets/img/drumms.jpg" width="220px" height="200px"  alt="imagem drumms" title="Drumms" />
+								
+						<img src="assets/img/guitarras.jpg" width="220px" height="200px"  alt="guitarras" title="Guitarras" /> 
+									
+						<img src="assets/img/piano.jpg" width="220px" height="200px"  alt="imagem piano" />
+										
+						<img src="assets/img/trompete.jpg" width="220px" height="200px"  alt="trompete" /> 
+
+						<img src="assets/img/tecladostudio.jpg" width="220px" height="200px"  alt="imagem teclado studio" />
+
 					</div>
-			
-		<footer class="main-footer">
-			<a href="#"><i class="fa-brands fa-facebook"></i></a>
-			<a href="#"><i class="fa-brands fa-twitter"></i></a>
-			<a href="#"><i class="fa-brands fa-instagram"></i></a>
-			<a href="#"><i class="fa-brands fa-google-plus"></i></a>
-			<a href="#"><i class="fa-brands fa-youtube"></i></a>
-		</footer>
+
+					<div id="inst_2">
+											
+						<img src="assets/img/caixa.jpg" width="220px" height="200px"  alt="caixa" /> 
+											
+						<img src="assets/img/violino.jpg" width="220px" height="200px"  alt="violino" /> 
+
+						<img src="assets/img/baixo.jpg" width="220px" height="200px"  alt="baixo" /> 
+
+						<img src="assets/img/percussao.jpg" width="220px" height="200px"  alt="perc" />
+
+						<img src="assets/img/guitarras.jpg" width="220px" height="200px"  alt="guitarras" /> 
+
+					</div>
+
+			    </div>
+
+		    </section>
+					
+			<aside>
+
+                <p class="escolhe">AQUI VOCÊ ESCOLHE E TESTA O SEU EQUIPAMENTO</p>
+                            
+                <ul class="lista">
+                    <li>Escolha os equipamentos que você quer comprar;</li>
+                    <li>Escolha o meio de pagamento;</li>
+                    <li>Receba seu equipamento no sitio desejado.</li>
+                </ul>
+            
+            </aside>
+            
+            <footer class="footer-content">
+
+                <h3>World Music</h3>
+    
+                <p>A WORLD MUSIC, É a loja de instrumentos musicais feito para você.<br> Tudo aqui é pensado e organizado, para que voce tenha uma experiencia musical de alta qualidade. </p>
+               
+                <ul class="rede_social">
+                    <li><a href="#"><i class="bi bi-youtube">Youtube</i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram">Instagram</i></a></li>
+                    <li><a href="#"><i class="bi bi-android2">Android</i></a></li>
+                    <li><a href="#"><i class="bi bi-github">Github</i></a></li>
+                    <li><a href="#"><i class="bi bi-google">Google</i></a></li>
+                </ul>
+    
+                <div class="footer-bottom">
+                    <p>copryight &copy;2023 IGR-code. designed by <span>Ismar Gomes</span></p>
+    
+                </div>
+    
+            </footer>
+
+	    </main>
+
 	</body>
+
 </html>
