@@ -45,7 +45,7 @@ nav {
     padding-bottom: 0px;
     padding-left: 20PX;
     text-align: right;
-    background-color: #1111CD;	
+    background-color: #2222CD;	
 }
 
 a {
@@ -71,6 +71,24 @@ a::before {
     flex-direction: column;
     align-items: center;   
 }
+
+#sobre {             /*Sobre nós*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;  
+}
+
+.w_music img {      /*Sobre nós*/
+    width: 280vw;
+    height: 300vw;
+}
+
+#sobre_nos {        /*Sobre nós*/
+    display: flex;
+    flex-direction: column;
+}
+
 
 #button, h2 {
     display: inline-block;
@@ -103,6 +121,20 @@ a::before {
     background-color:#3333CD;
 }
 
+.empresa {
+    font-size: 24px; /*Sobre nós*/
+}
+
+#sobre_texto {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#sobre_texto span {
+    font-weight: bold;
+}
+
+
 .pgf {
     font-size: 20px;
 }
@@ -117,6 +149,11 @@ select {
     border-radius: 10px;
     border: 2px solid #000;
 }
+
+#cadastro {
+    background-color: #4cd137; /*Sobre nós*/
+}
+
 
 
 .slider {

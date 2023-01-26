@@ -19,3 +19,5 @@ Cria "id=escolhe" para parágrafo e id=lista" para lista ul;
 Cria novo "footer" com a class="footer-content", ul class="rede_social" e class="footer-bottom".
 
 Estiliza o CSS das mesmas acima.
+
+Atualiza contacto e sobre nós, inicia processo de estilizar os mesmos
