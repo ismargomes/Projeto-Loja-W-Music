@@ -4,14 +4,13 @@ body{
     width: 100%;
     height: 100vh; 
     box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
 }
 
 header{
     display: flex;
-    background-color: #535c68;
-    border-bottom: 8px solid #000;
+    flex-direction: row;
+    background-color: #2222CD;
+    border-bottom: 8px solid #0000CD;
     padding: 5px 10px;
     justify-content:space-between;
     margin-bottom: 0px;
@@ -19,6 +18,7 @@ header{
     margin-left: -10px;
     margin-right: -10px;
 }
+
 
 h1{
     font-family: 'fira code', sans-serif;
@@ -29,7 +29,7 @@ h1{
     margin-left:60px;		
 }
 
-h2{
+/*h2{
     font-size: 40px;
     font-family: 'fira code', sans-serif;
     font-size: 40px;
@@ -37,14 +37,15 @@ h2{
     text-shadow: 4px 4px 2px #000;
     line-height: 40px;
     margin: 18px;
-}
+}*/
+
 
 nav {
     padding-top: 40px;
     padding-bottom: 0px;
     padding-left: 20PX;
     text-align: right;
-    background-color:#535c68;	
+    background-color: #1111CD;	
 }
 
 a {
@@ -62,7 +63,13 @@ a::before {
     height: 10px;
     margin-right: 10px;
     content:"" ;
-    background-color:#F25A70;
+    background-color:#FFF;
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
 }
 
 #button, h2 {
@@ -75,33 +82,53 @@ a::before {
     background-color:#F25A70;
 }
 
-#box {
-    display: inline;
-    margin-top: -20px;    
+#home {
+    font-size: 40px;
+    font-family: 'fira code', sans-serif;
+    color: #FFF;
+    text-shadow: 4px 4px 2px #000;
+    margin-left: 20px;
+    margin-bottom: 10.2px;
 }
 
-#home {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 45%;
+#button, #home {
+    display: inline-block;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height:54px;
+    box-shadow:	5px 5px 0px #000;	
+    margin-right: 20px;
+    border-radius: 15px;
+    background-color:#3333CD;
 }
 
 .pgf {
     font-size: 20px;
-    margin-left: -2%;
+}
+
+#escolha {
+    font-size: 24px;
 }
 
 select {
-    margin-left: 5%; 
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #000;
 }
 
+
 .slider {
-    margin: 0;
-    margin-left: 26.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 26%;
     width: 800px;
     height: 400px;
     overflow: hidden;
     border-radius: 20px;
+    margin-top: 30px;
 }
 
 .slides{
@@ -216,6 +243,23 @@ select {
     justify-content: center;   
 }
 
+/*Volta daqui*/
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#equipamento {
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+/*Até aqui estilizamos o site, falta o footer*/
+
 
 #container {
     margin-top: 60px;
@@ -244,17 +288,17 @@ select {
    margin-top:10px;		
 }
 
+/*
 #p{
 font-family:Fira Code, sans-serif;
 font-size:20px;	
-}
+}*/
 
 .escolhe {
     text-align: center;
     font-size: 25px;
     font-family: cursive;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 #local{
@@ -269,20 +313,89 @@ font-size:20px;
     text-align: center;
     font-size: 25px;
     font-family: cursive;
+    margin-top: -15px;
+    margin-bottom: 40px;
     color: #000;
 }
 
-#text {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 42%;
+/*Aqui começa estilizar o footer*/
+
+footer {
+    background-color: #2222CD;
+    height: auto;
+    width: 100vw;
+    font-family: "open Sans";
+    padding-top: 40px;
+    color: #fff;   
 }
 
-.main-footer{
+.footer-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    background-color: #535c68;
-    border-bottom: 10px solid #000;
+    text-align: center;   
 }
+
+.footer-content h3 {
+    margin-top: 6px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+.footer-content p {
+    min-width: 500px;
+    margin: auto;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.rede_social {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.rede_social li {
+    margin: 0;   
+}
+
+.rede_social a {
+    text-decoration: none;
+    color: #fff;   
+}
+
+.rede_social a i {
+    font-size: 1.2rem; 
+    transition: color .4s ease;   
+}
+
+.rede_social a:hover i {
+    color:aqua;
+}
+
+.footer-bottom {
+    background-color: #0000CD;
+    width: 100vw;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: captalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
