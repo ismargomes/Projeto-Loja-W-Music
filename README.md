@@ -20,4 +20,6 @@ Cria novo "footer" com a class="footer-content", ul class="rede_social" e class=
 
 Estiliza o CSS das mesmas acima.
 
-Atualiza contacto e sobre nós, inicia processo de estilizar os mesmos
+Atualiza contacto e sobre nós, inicia processo de estilizar os mesmos.
+
+Atualiza e inicia a estilização da página contacto com CSS.
