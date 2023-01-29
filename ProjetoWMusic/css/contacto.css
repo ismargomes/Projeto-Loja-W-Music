@@ -1,58 +1,76 @@
-body{
+body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     width: 100%;
     height: 100vh; 
-    box-sizing: border-box;
 }
 
-.coluna_1 {        /*Página Contacto*/
+.ponto-x {  /*PAI das divs "coluna_1 e coluna_2*/
+    display: flex; 
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.coluna_1 {   /*PAI das divs "coluna_1 e coluna_2*/
     display: flex;
     flex-direction: column;
-    
+    justify-content: center; 
+    gap: 1rem;
 }
 
-.ponto-x {
-    display: flex;
-}
-
-.adress {          /*Página Contacto*/
+.address {   /*FILHO da div "coluna_1"*/
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 200px;
-    gap: 2rem;
-    border: 5px solid #111;
+    justify-content: center;
+    width: 30%;
+    margin-left: 5rem;
+    background-color: #CAD3C8;
+    padding: 0px 25px 20px ;
+    border: 4px solid #dff9fb;   
+}
 
-    background-color: blueviolet;
+p {
+    font-size: 20px;
+    margin-bottom: 1rem;
 }
 
 
-#end {             /*Página Contacto*/
-    padding: 20px;
-    font-size: 25px; 
+.maps {      /*FILHO da div "coluna_1"*/
+    width: 30%;
+    background-color: #CAD3C8;
+    padding: 0px 25px 20px ;
+    border: 4px solid #dff9fb;
+    margin-left: 5rem;
+    border: 4px solid #dff9fb;
 }
 
-.maps {            /*Página Contacto*/
-    display: flex;
-    flex-direction: column;
-    width: 600px;
+#sobre_texto {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+span {
+    font-weight: bold;
+
+}
+
+.coluna_2 { 
+    position:absolute;
+    width: 100%;
     height: auto;
-    border: 5px solid #111;
-
-    background-color: blue;
+    margin: 0px;
 }
 
-#sobre_texto {    /*Página Contacto*/
-    padding: 20px;
+#local {
+    position: absolute;
+    left: 15%;
+    width: 100%;
+    height: auto;
 }
 
-.coluna_2 {
-    border: 5px solid #111;
-    display:flex;
-    flex-direction: column;
-    width: 600px;
-    
-  }
-  
+#mapa {
+    width: 800px;
+    height: 500px; 
+}
 
