@@ -136,8 +136,14 @@ h4 {
     font-weight: bold;
 }
 
-.pgf {
-    font-size: 20px;
+.pgf {                 /*Catálogo*/
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #FFF;  
+    padding: 0.6rem;
+    border-radius: 15px;       
+
 }
 
 #escolha {
@@ -323,21 +329,26 @@ aside {                       /*Sobre nós*/
     height:500px;			
 }
 
-#instrument {		
+/*#instrument {		
    width: 1300px;
    height: 400px;
    margin-left:200px;
    margin-top: 0px;
    margin-bottom:20px;		
-}
+}*/
 
-.instrument {
+.instrument {         /*Catálogo*/
     display: flex;	
     flex-direction: column;	
     align-items: center;
     justify-content: center;
     padding: 0 20px;
 
+}
+
+.fts_catalog {
+    width: 220px;
+    height: 200px;
 }
 
 #inst_1 {

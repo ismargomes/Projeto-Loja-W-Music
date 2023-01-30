@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 
-<html lang="pt-BR">
-	
+<html lang="pt-BR">	
 	<head>
-
 		<meta name="description" content="Site Loja W Music">
         <meta name="category" content="portugues, brasileiro, programação web">
         <meta name="author" content="Ismar Gomes">
@@ -18,124 +16,86 @@
 
 		<title>Catálogo</title>
 		
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 
 	<body>
-
 		<main class="background">
-
 			<header>
-
-				<div class="logo">
-                    <h1>W.Music</h1>
-                </div>
-
-				<nav>				 
-					<a lang="en" href="index.html" target="_blank">Home</a>
-					<a href="sobre.html" target="_blank">Sobre</a>
-					<a href="catalogo.html" target="_blank">Catálogo</a>
-					<a href="contacto.html" target="_blank">Contacto</a>				 
-				</nav>
-
+				<nav>   
+                    <img src="assets/img/logo-sfundo.png" class="logo" alt="logo">
+                    <ul>                 
+                        <li><a lang="en" href="index.html">Home</a></li>
+                        <li></li><a href="sobre.html">Sobre</a></li>
+                        <li></li><a href="catalogo.html">Catálogo</a></li>
+                        <li></li><a href="contacto.html">Contacto</a></li> 
+                    </ul>                  
+                    <a href="#" class="button">Cadastre-se</a>           
+                </nav>               
 			</header>
 
-			<article>
-			
-				<div id="box">
-										
-						<h2 id="home">Catálogo</h2>
-
-							<p class="pgf">Escolha o seu Instrumento</p>
-								
-						<select>
-							<option value="bateria">Bateria</option>
-							<option value="guitarra">Guitarra</option>
-							<option value="piano">Piano</option>
-							<option value="trompete">Trompete</option>
-							<option value="teclado">Teclado</option>
-							<option value="caixa">Caixa</option>
-							<option value="violino">Violino</option>
-							<option value="baixo">Baixo</option>
-							<option value="percussao">Percussão</option>					
-						</select>			  
-					
+			<article>			
+				<div id="box">										
+					<h2 id="home">Catálogo</h2>
+						<p class="pgf">Escolha o seu Instrumento</p>								
+					<select>
+						<option value="bateria">Bateria</option>
+						<option value="guitarra">Guitarra</option>
+						<option value="piano">Piano</option>
+						<option value="trompete">Trompete</option>
+						<option value="teclado">Teclado</option>
+						<option value="caixa">Caixa</option>
+						<option value="violino">Violino</option>
+						<option value="baixo">Baixo</option>
+						<option value="percussao">Percussão</option>					
+					</select>			  					
 				</div><!--Fim da div "box"-->
-
 		    </article>
 
 			<section>
-
 				<div class="instrument">
-
 					<div id="inst_1">
-
-						<img src="assets/img/drumms.jpg" width="220px" height="200px"  alt="imagem drumms" title="Drumms" />
-								
-						<img src="assets/img/guitarras.jpg" width="220px" height="200px"  alt="guitarras" title="Guitarras" /> 
-									
-						<img src="assets/img/piano.jpg" width="220px" height="200px"  alt="imagem piano" />
-										
-						<img src="assets/img/trompete.jpg" width="220px" height="200px"  alt="trompete" /> 
-
-						<img src="assets/img/tecladostudio.jpg" width="220px" height="200px"  alt="imagem teclado studio" />
-
+						<img src="assets/img/drumms.jpg" class="fts_catalog"  alt="imagem drumms" />
+						<img src="assets/img/guitarras.jpg" class="fts_catalog" alt="guitarras" /> 
+						<img src="assets/img/piano.jpg" class="fts_catalog" alt="imagem piano" />
+						<img src="assets/img/trompete.jpg" class="fts_catalog" alt="trompete" /> 
+						<img src="assets/img/tecladostudio.jpg" class="fts_catalog" alt="imagem teclado studio" />
 					</div>
 
-					<div id="inst_2">
-											
-						<img src="assets/img/caixa.jpg" width="220px" height="200px"  alt="caixa" /> 
-											
-						<img src="assets/img/violino.jpg" width="220px" height="200px"  alt="violino" /> 
-
-						<img src="assets/img/baixo.jpg" width="220px" height="200px"  alt="baixo" /> 
-
-						<img src="assets/img/percussao.jpg" width="220px" height="200px"  alt="perc" />
-
-						<img src="assets/img/saxophone.jpg" width="220px" height="200px"  alt="guitarras" /> 
-
+					<div id="inst_2">											
+						<img src="assets/img/caixa.jpg" class="fts_catalog" alt="caixa" /> 
+						<img src="assets/img/violino.jpg" class="fts_catalog" alt="violino" /> 
+						<img src="assets/img/baixo.jpg" class="fts_catalog" alt="baixo" /> 
+						<img src="assets/img/percussao.jpg" class="fts_catalog" alt="perc" />
+						<img src="assets/img/saxophone.jpg" class="fts_catalog" alt="guitarras" /> 
 					</div>
-
 			    </div>
-
 		    </section>
 					
 			<aside>
-
                 <p class="escolhe">AQUI VOCÊ ESCOLHE E TESTA O SEU EQUIPAMENTO</p>
                             
                 <ul class="lista">
-                    <li>Escolha os equipamentos que você quer comprar;</li>
-                    <li>Escolha o meio de pagamento;</li>
-                    <li>Receba seu equipamento no sitio desejado.</li>
-                </ul>
-            
+					<li class="cartaz">Escolha os equipamentos<br>que você quer comprar;</li><br>
+                    <li class="cartaz">Escolha o meio <br> de pagamento;</li><br>
+                    <li class="cartaz">Receba seu equipamento <br> no sitio desejado.</li>
+                </ul>            
             </aside>
             
             <footer class="footer-content">
-
-                <h3>World Music</h3>
-    
-                <p>A WORLD MUSIC, É a loja de instrumentos musicais feito para você.<br> Tudo aqui é pensado e organizado, para que voce tenha uma experiencia musical de alta qualidade. </p>
-               
+                <h3>World Music</h3>    
+                    <p>A WORLD MUSIC, É a loja de instrumentos musicais feito para você.<br> Tudo aqui é pensado e organizado, para que voce tenha uma experiencia musical de alta qualidade. </p>               
                 <ul class="rede_social">
                     <li><a href="#"><i class="bi bi-youtube">Youtube</i></a></li>
                     <li><a href="#"><i class="bi bi-instagram">Instagram</i></a></li>
                     <li><a href="#"><i class="bi bi-android2">Android</i></a></li>
                     <li><a href="#"><i class="bi bi-github">Github</i></a></li>
                     <li><a href="#"><i class="bi bi-google">Google</i></a></li>
-                </ul>
-    
+                </ul>   
                 <div class="footer-bottom">
-                    <p>copryight &copy;2023 IGR-code. designed by <span>Ismar Gomes</span></p>
-    
-                </div>
-    
+                    <p>copryight &copy;2023 IGR-code. designed by <span>Ismar Gomes</span></p>    
+                </div>    
             </footer>
-
 	    </main>
-
 	</body>
-
 </html>
