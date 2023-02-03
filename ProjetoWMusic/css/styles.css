@@ -63,6 +63,19 @@ ul {
     gap: 3rem; /*** (3 rem é = a 30 px) ***/
 }
 
+ul a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+ul a:hover::after {
+    width: 100%;      /* AQUI O (width: 100%; ) FAZ APARECER O SUBLINHADO AO PASSAR "O MOUSE SOBRE O MENU". */
+}
 
 .button {
     display: inline-flex;
@@ -70,16 +83,16 @@ ul {
     align-items: center;
     padding: 3px 20px;
     height: 50px;
-    border: 2px solid #0354ce;
+    border: 2px solid #f44336;
     color: #fff;
-    background-color: #0052CE;                
+    background-color: #f44336;                
     border-radius: .8rem;
     transition: .8s;                          
 }
 
 .button:hover {
     background-color: #FFF;
-    color: #0052CE;
+    color: #f44336;
 }
 
 #box {   
@@ -87,6 +100,38 @@ ul {
     flex-direction: column;
     align-items: center;      
 }
+
+/* INÍCIO DA SECTION .COURSE (COURSE.HTML) */
+.banner {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.row {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.banner-col {                /* A DIV (.course-col) vai estilizar as 3 Divs de uma só vez. */
+    background: #d1ccc0;
+    flex-basis: 31%;         /* Flex-basis: 31%; : =  ARRUMOU AS 3 DIVS, COM OS TEXTOS. */
+    border-radius: 10%;
+    padding: 20px 12px;        /* Padding: 20px 12px;  =  Espaço interno nas 3 DIVS. */
+    box-sizing: border-box;    /* Box-sizing: border-box;  = Aumenta o espaço entre as 3 DIVS. */
+    margin-bottom: 5%;        /* Margin-bottom: 5%;  =  Aumenta o espaço das 3 DIVS, com o elemento abaixo. */
+    transition: 0.5s;         /* Para o efeito da Borda das Divs "APARECEREM." (.course-col:hover) */
+}
+h3 {              /* Vamos arrumar o título */
+    text-align: center;    /* Alinhar o texto ao centro */
+    font-weight: 600;      /* A espessura da letra */
+    margin: 10px 0px;      /* As margens nas 4 extremidades */
+    color: #000;
+}
+.banner-col:hover {        /* Vamos coloacar uma borda na DIV " Que aparece quando o curso passa por cima */
+    box-shadow: 0 0 20px 0px;    
+}
+
 
 #sobre {             /*Sobre nós*/
     display: flex;
@@ -480,15 +525,15 @@ footer {
     font-size: 2rem;
     font-weight: 400;
     text-transform: capitalize;
-    line-height: 2rem;
+    line-height: 1rem;
 }
 
 .footer-content p {
     min-width: 500px;
     margin: auto;
-    line-height: 28px;
-    font-size: 16px;
-    margin-bottom: 15px;
+    line-height: 24px;
+    font-size: 16px;  
+    margin-bottom: 1rem; 
 }
 
 .rede_social {
@@ -497,7 +542,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 1rem 0;
 }
 
 .rede_social li {
@@ -510,12 +555,12 @@ footer {
 }
 
 .rede_social a i {
-    font-size: 1.2rem; 
-    transition: color .4s ease;   
+    font-size: 1.5rem; 
+    transition: color .5s ease;   
 }
 
 .rede_social a:hover i {
-    color:aqua;
+    color:#f44336;;
 }
 
 .footer-bottom {
