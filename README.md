@@ -23,3 +23,5 @@ Estiliza o CSS das mesmas acima.
 Atualiza contacto e sobre nós, inicia processo de estilizar os mesmos.
 
 Atualiza e inicia a estilização da página contacto com CSS.
+
+Melhora semântica do CSS e HTML e altera e cria section diferenciais
