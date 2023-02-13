@@ -24,3 +24,12 @@ function nextImage() {
 }
 
 startTimer();
+
+/********************************************/  
+// Prompt e alert de Boas vindas  
+/********************************************/  
+
+let nome = window.prompt('Qual é o seu nome?'); // Cria ( 'Qual o seu nome?');
+
+window.alert('Seja bem vindo(a) ao Site World Music, ' + nome + '!'); // No alert, vai aparecer as BOAS VINAS, com o nome da pessoa, que a var nome = "RECEBER"
+    
